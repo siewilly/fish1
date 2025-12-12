@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title> <!-- Title will show "Loading..." on the browser tab -->
+  <style>
+    /* Ensure the page fills the screen */
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Embed YouTube Video (Rickroll) -->
+  <iframe id="rickroll-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&showinfo=0" allow="autoplay"></iframe>
+
+  <script>
+    // Redirect to a new page after 1 second (1000 milliseconds)
+    setTimeout(function() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&index=1"; // Change this to your desired URL
+    }, 1000);  // 1 second
+  </script>
+
+</body>
+</html>
